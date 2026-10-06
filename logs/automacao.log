@@ -1,0 +1,808 @@
+2026-10-04 14:32:17,901 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:17,901 - INFO - AutomacaoRPA - INICIANDO AUTOMAÇÃO ERP
+2026-10-04 14:32:17,901 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:17,902 - INFO - AutomacaoRPA - ✅ Pool de conexões Oracle inicializado com sucesso.
+2026-10-04 14:32:17,902 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:17,902 - INFO - AutomacaoRPA - INICIANDO LIMPEZA
+2026-10-04 14:32:17,902 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:17,902 - INFO - AutomacaoRPA - Limpando pasta: C:\Users\User\Documents\AUTOMACAO_RPA\Input_Automacao
+2026-10-04 14:32:17,903 - INFO - AutomacaoRPA - Arquivos encontrados: ['BATCH-000001_PEDIDOS.csv', 'BATCH-000002_PEDIDOS.csv', 'BATCH-000003_PEDIDOS.csv', 'BATCH-000004_PEDIDOS.csv', 'BATCH-000005_PEDIDOS.csv', 'relatorio_lotes.xlsx']
+2026-10-04 14:32:17,903 - INFO - AutomacaoRPA - Arquivo removido: BATCH-000001_PEDIDOS.csv
+2026-10-04 14:32:17,904 - INFO - AutomacaoRPA - Arquivo removido: BATCH-000002_PEDIDOS.csv
+2026-10-04 14:32:17,904 - INFO - AutomacaoRPA - Arquivo removido: BATCH-000003_PEDIDOS.csv
+2026-10-04 14:32:17,905 - INFO - AutomacaoRPA - Arquivo removido: BATCH-000004_PEDIDOS.csv
+2026-10-04 14:32:17,905 - INFO - AutomacaoRPA - Arquivo removido: BATCH-000005_PEDIDOS.csv
+2026-10-04 14:32:17,905 - INFO - AutomacaoRPA - Arquivo removido: relatorio_lotes.xlsx
+2026-10-04 14:32:17,905 - INFO - AutomacaoRPA - Pasta limpa: C:\Users\User\Documents\AUTOMACAO_RPA\Input_Automacao
+2026-10-04 14:32:17,905 - INFO - AutomacaoRPA - Limpando pasta: C:\Users\User\Documents\AUTOMACAO_RPA\NF
+2026-10-04 14:32:17,906 - INFO - AutomacaoRPA - Arquivos encontrados: ['NF-000001.pdf', 'NF-000002.pdf', 'NF-000003.pdf', 'NF-000004.pdf', 'NF-000005.pdf', 'NF-000006.pdf', 'NF-000007.pdf', 'NF-000008.pdf', 'NF-000009.pdf', 'NF-000010.pdf', 'NF-000011.pdf', 'NF-000012.pdf', 'NF-000013.pdf', 'NF-000014.pdf', 'NF-000015.pdf', 'NF-000016.pdf', 'NF-000017.pdf', 'NF-000018.pdf', 'NF-000019.pdf', 'NF-000020.pdf', 'NF-000021.pdf']
+2026-10-04 14:32:17,906 - INFO - AutomacaoRPA - Arquivo removido: NF-000001.pdf
+2026-10-04 14:32:17,906 - INFO - AutomacaoRPA - Arquivo removido: NF-000002.pdf
+2026-10-04 14:32:17,906 - INFO - AutomacaoRPA - Arquivo removido: NF-000003.pdf
+2026-10-04 14:32:17,907 - INFO - AutomacaoRPA - Arquivo removido: NF-000004.pdf
+2026-10-04 14:32:17,907 - INFO - AutomacaoRPA - Arquivo removido: NF-000005.pdf
+2026-10-04 14:32:17,907 - INFO - AutomacaoRPA - Arquivo removido: NF-000006.pdf
+2026-10-04 14:32:17,907 - INFO - AutomacaoRPA - Arquivo removido: NF-000007.pdf
+2026-10-04 14:32:17,907 - INFO - AutomacaoRPA - Arquivo removido: NF-000008.pdf
+2026-10-04 14:32:17,908 - INFO - AutomacaoRPA - Arquivo removido: NF-000009.pdf
+2026-10-04 14:32:17,908 - INFO - AutomacaoRPA - Arquivo removido: NF-000010.pdf
+2026-10-04 14:32:17,908 - INFO - AutomacaoRPA - Arquivo removido: NF-000011.pdf
+2026-10-04 14:32:17,909 - INFO - AutomacaoRPA - Arquivo removido: NF-000012.pdf
+2026-10-04 14:32:17,909 - INFO - AutomacaoRPA - Arquivo removido: NF-000013.pdf
+2026-10-04 14:32:17,909 - INFO - AutomacaoRPA - Arquivo removido: NF-000014.pdf
+2026-10-04 14:32:17,909 - INFO - AutomacaoRPA - Arquivo removido: NF-000015.pdf
+2026-10-04 14:32:17,910 - INFO - AutomacaoRPA - Arquivo removido: NF-000016.pdf
+2026-10-04 14:32:17,910 - INFO - AutomacaoRPA - Arquivo removido: NF-000017.pdf
+2026-10-04 14:32:17,910 - INFO - AutomacaoRPA - Arquivo removido: NF-000018.pdf
+2026-10-04 14:32:17,911 - INFO - AutomacaoRPA - Arquivo removido: NF-000019.pdf
+2026-10-04 14:32:17,911 - INFO - AutomacaoRPA - Arquivo removido: NF-000020.pdf
+2026-10-04 14:32:17,912 - INFO - AutomacaoRPA - Arquivo removido: NF-000021.pdf
+2026-10-04 14:32:17,912 - INFO - AutomacaoRPA - Pasta limpa: C:\Users\User\Documents\AUTOMACAO_RPA\NF
+2026-10-04 14:32:17,912 - INFO - AutomacaoRPA - Conectando ao Oracle...
+2026-10-04 14:32:17,948 - INFO - AutomacaoRPA - Conexão estabelecida com sucesso.
+2026-10-04 14:32:17,948 - INFO - AutomacaoRPA - Deletando tabela LOTE...
+2026-10-04 14:32:17,995 - INFO - AutomacaoRPA - Tabela LOTE deletada com sucesso.
+2026-10-04 14:32:17,995 - INFO - AutomacaoRPA - Conexão encerrada.
+2026-10-04 14:32:17,995 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:17,995 - INFO - AutomacaoRPA - LIMPEZA FINALIZADA
+2026-10-04 14:32:17,996 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:20,319 - INFO - AutomacaoRPA - Iniciando processo de login...
+2026-10-04 14:32:20,879 - INFO - AutomacaoRPA - Campo de usuário encontrado.
+2026-10-04 14:32:20,888 - INFO - AutomacaoRPA - Campo de senha encontrado.
+2026-10-04 14:32:20,902 - INFO - AutomacaoRPA - Botão de login encontrado.
+2026-10-04 14:32:20,954 - INFO - AutomacaoRPA - Usuário preenchido: caiogrites@gmail.com
+2026-10-04 14:32:20,988 - INFO - AutomacaoRPA - Senha preenchida (oculta).
+2026-10-04 14:32:21,020 - INFO - AutomacaoRPA - Botão de login clicado. Login enviado.
+2026-10-04 14:32:21,038 - INFO - AutomacaoRPA - Diretório de download configurado para Excel: C:\Users\User\Documents\AUTOMACAO_RPA\Input_Automacao
+2026-10-04 14:32:21,038 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:21,038 - INFO - AutomacaoRPA - INICIANDO PROCESSAMENTO DE LOTES
+2026-10-04 14:32:21,038 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:21,038 - INFO - AutomacaoRPA - Abrindo página de Lotes...
+2026-10-04 14:32:23,638 - INFO - AutomacaoRPA - Página de Lotes aberta
+2026-10-04 14:32:24,154 - INFO - AutomacaoRPA - Lista de lotes carregada
+2026-10-04 14:32:24,154 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:24,154 - INFO - AutomacaoRPA - BUSCANDO PRÓXIMO BATCH
+2026-10-04 14:32:24,154 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:24,194 - INFO - AutomacaoRPA - Lotes encontrados: ['BATCH-000005', 'BATCH-000004', 'BATCH-000003', 'BATCH-000002', 'BATCH-000001']
+2026-10-04 14:32:24,194 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:24,195 - INFO - AutomacaoRPA - PROCESSANDO: BATCH-000005
+2026-10-04 14:32:24,195 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:24,195 - INFO - AutomacaoRPA - Selecionando BATCH-000005...
+2026-10-04 14:32:24,737 - INFO - AutomacaoRPA - BATCH-000005 selecionado
+2026-10-04 14:32:24,737 - INFO - AutomacaoRPA - Procurando botão Exportar Excel...
+2026-10-04 14:32:25,282 - INFO - AutomacaoRPA - Botão Exportar Excel clicado
+2026-10-04 14:32:28,283 - INFO - AutomacaoRPA - Download do Excel realizado. Arquivo salvo em: C:\Users\User\Documents\AUTOMACAO_RPA\Input_Automacao
+2026-10-04 14:32:28,283 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:28,283 - INFO - AutomacaoRPA - BATCH-000005 FINALIZADO
+2026-10-04 14:32:28,283 - INFO - AutomacaoRPA - Total processado: 1
+2026-10-04 14:32:28,283 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:28,283 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:28,283 - INFO - AutomacaoRPA - BUSCANDO PRÓXIMO BATCH
+2026-10-04 14:32:28,283 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:28,306 - INFO - AutomacaoRPA - Lotes encontrados: ['BATCH-000005', 'BATCH-000004', 'BATCH-000003', 'BATCH-000002', 'BATCH-000001']
+2026-10-04 14:32:28,306 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:28,306 - INFO - AutomacaoRPA - PROCESSANDO: BATCH-000004
+2026-10-04 14:32:28,306 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:28,306 - INFO - AutomacaoRPA - Selecionando BATCH-000004...
+2026-10-04 14:32:28,840 - INFO - AutomacaoRPA - BATCH-000004 selecionado
+2026-10-04 14:32:28,840 - INFO - AutomacaoRPA - Procurando botão Exportar Excel...
+2026-10-04 14:32:29,374 - INFO - AutomacaoRPA - Botão Exportar Excel clicado
+2026-10-04 14:32:32,375 - INFO - AutomacaoRPA - Download do Excel realizado. Arquivo salvo em: C:\Users\User\Documents\AUTOMACAO_RPA\Input_Automacao
+2026-10-04 14:32:32,375 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:32,375 - INFO - AutomacaoRPA - BATCH-000004 FINALIZADO
+2026-10-04 14:32:32,375 - INFO - AutomacaoRPA - Total processado: 2
+2026-10-04 14:32:32,375 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:32,375 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:32,375 - INFO - AutomacaoRPA - BUSCANDO PRÓXIMO BATCH
+2026-10-04 14:32:32,375 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:32,404 - INFO - AutomacaoRPA - Lotes encontrados: ['BATCH-000005', 'BATCH-000004', 'BATCH-000003', 'BATCH-000002', 'BATCH-000001']
+2026-10-04 14:32:32,404 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:32,404 - INFO - AutomacaoRPA - PROCESSANDO: BATCH-000003
+2026-10-04 14:32:32,404 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:32,404 - INFO - AutomacaoRPA - Selecionando BATCH-000003...
+2026-10-04 14:32:32,942 - INFO - AutomacaoRPA - BATCH-000003 selecionado
+2026-10-04 14:32:32,942 - INFO - AutomacaoRPA - Procurando botão Exportar Excel...
+2026-10-04 14:32:33,475 - INFO - AutomacaoRPA - Botão Exportar Excel clicado
+2026-10-04 14:32:36,475 - INFO - AutomacaoRPA - Download do Excel realizado. Arquivo salvo em: C:\Users\User\Documents\AUTOMACAO_RPA\Input_Automacao
+2026-10-04 14:32:36,476 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:36,476 - INFO - AutomacaoRPA - BATCH-000003 FINALIZADO
+2026-10-04 14:32:36,476 - INFO - AutomacaoRPA - Total processado: 3
+2026-10-04 14:32:36,476 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:37,484 - INFO - AutomacaoRPA - Scroll realizado até o último lote.
+2026-10-04 14:32:37,484 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:37,484 - INFO - AutomacaoRPA - BUSCANDO PRÓXIMO BATCH
+2026-10-04 14:32:37,485 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:37,508 - INFO - AutomacaoRPA - Lotes encontrados: ['BATCH-000005', 'BATCH-000004', 'BATCH-000003', 'BATCH-000002', 'BATCH-000001']
+2026-10-04 14:32:37,508 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:37,508 - INFO - AutomacaoRPA - PROCESSANDO: BATCH-000002
+2026-10-04 14:32:37,508 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:37,508 - INFO - AutomacaoRPA - Selecionando BATCH-000002...
+2026-10-04 14:32:38,047 - INFO - AutomacaoRPA - BATCH-000002 selecionado
+2026-10-04 14:32:38,048 - INFO - AutomacaoRPA - Procurando botão Exportar Excel...
+2026-10-04 14:32:38,579 - INFO - AutomacaoRPA - Botão Exportar Excel clicado
+2026-10-04 14:32:41,580 - INFO - AutomacaoRPA - Download do Excel realizado. Arquivo salvo em: C:\Users\User\Documents\AUTOMACAO_RPA\Input_Automacao
+2026-10-04 14:32:41,580 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:41,580 - INFO - AutomacaoRPA - BATCH-000002 FINALIZADO
+2026-10-04 14:32:41,581 - INFO - AutomacaoRPA - Total processado: 4
+2026-10-04 14:32:41,581 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:41,581 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:41,581 - INFO - AutomacaoRPA - BUSCANDO PRÓXIMO BATCH
+2026-10-04 14:32:41,581 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:41,606 - INFO - AutomacaoRPA - Lotes encontrados: ['BATCH-000005', 'BATCH-000004', 'BATCH-000003', 'BATCH-000002', 'BATCH-000001']
+2026-10-04 14:32:41,606 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:41,606 - INFO - AutomacaoRPA - PROCESSANDO: BATCH-000001
+2026-10-04 14:32:41,606 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:41,606 - INFO - AutomacaoRPA - Selecionando BATCH-000001...
+2026-10-04 14:32:42,141 - INFO - AutomacaoRPA - BATCH-000001 selecionado
+2026-10-04 14:32:42,141 - INFO - AutomacaoRPA - Procurando botão Exportar Excel...
+2026-10-04 14:32:42,671 - INFO - AutomacaoRPA - Botão Exportar Excel clicado
+2026-10-04 14:32:45,671 - INFO - AutomacaoRPA - Download do Excel realizado. Arquivo salvo em: C:\Users\User\Documents\AUTOMACAO_RPA\Input_Automacao
+2026-10-04 14:32:45,671 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:45,671 - INFO - AutomacaoRPA - BATCH-000001 FINALIZADO
+2026-10-04 14:32:45,671 - INFO - AutomacaoRPA - Total processado: 5
+2026-10-04 14:32:45,672 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:45,672 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:45,672 - INFO - AutomacaoRPA - BUSCANDO PRÓXIMO BATCH
+2026-10-04 14:32:45,672 - INFO - AutomacaoRPA - --------------------------------
+2026-10-04 14:32:45,695 - INFO - AutomacaoRPA - Lotes encontrados: ['BATCH-000005', 'BATCH-000004', 'BATCH-000003', 'BATCH-000002', 'BATCH-000001']
+2026-10-04 14:32:45,695 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:45,695 - INFO - AutomacaoRPA - NÃO HÁ MAIS LOTES PENDENTES
+2026-10-04 14:32:45,695 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:45,695 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:45,695 - INFO - AutomacaoRPA - TODOS OS LOTES FORAM PROCESSADOS
+2026-10-04 14:32:45,695 - INFO - AutomacaoRPA - Total de lotes: 5
+2026-10-04 14:32:45,695 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:32:47,920 - INFO - AutomacaoRPA - Conectando ao Oracle...
+2026-10-04 14:32:47,921 - INFO - AutomacaoRPA - Conexão estabelecida com sucesso.
+2026-10-04 14:32:47,921 - INFO - AutomacaoRPA - Criando tabela lote...
+2026-10-04 14:32:47,948 - INFO - AutomacaoRPA - Tabela lote criada com sucesso.
+2026-10-04 14:32:47,948 - INFO - AutomacaoRPA - Conexão encerrada.
+2026-10-04 14:32:47,948 - INFO - AutomacaoRPA - Conectando ao Oracle...
+2026-10-04 14:32:47,948 - INFO - AutomacaoRPA - Conexão estabelecida com sucesso.
+2026-10-04 14:32:47,948 - INFO - AutomacaoRPA - Arquivos encontrados na pasta: ['BATCH-000001_PEDIDOS.csv', 'BATCH-000002_PEDIDOS.csv', 'BATCH-000003_PEDIDOS.csv', 'BATCH-000004_PEDIDOS.csv', 'BATCH-000005_PEDIDOS.csv']
+2026-10-04 14:32:47,949 - INFO - AutomacaoRPA - Processando arquivo: BATCH-000001_PEDIDOS.csv
+2026-10-04 14:32:47,952 - INFO - AutomacaoRPA - Arquivo BATCH-000001_PEDIDOS.csv carregado com 6 registros.
+2026-10-04 14:32:48,000 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Vale Verde Agroindústria, Produto=Smartphone Motorola Moto G54 5G
+2026-10-04 14:32:48,001 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Carlos Eduardo Mendes, Produto=Smartphone Samsung Galaxy A54 5G 128GB
+2026-10-04 14:32:48,002 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Juliana Ferreira Dias, Produto=Smartphone Motorola Moto G54 5G
+2026-10-04 14:32:48,003 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Inovação Software SA, Produto=Monitor AOC 32 Polegadas 4K UHD
+2026-10-04 14:32:48,003 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Roberto Santos Lima, Produto=Headset JBL Tune 710BT Sem Fio
+2026-10-04 14:32:48,004 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Mercado Livre Comércio, Produto=Produto Inexistente (Teste)
+2026-10-04 14:32:48,005 - INFO - AutomacaoRPA - BATCH inserido com sucesso: BATCH-000001
+2026-10-04 14:32:48,005 - INFO - AutomacaoRPA - Processando arquivo: BATCH-000002_PEDIDOS.csv
+2026-10-04 14:32:48,007 - INFO - AutomacaoRPA - Arquivo BATCH-000002_PEDIDOS.csv carregado com 5 registros.
+2026-10-04 14:32:48,016 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Comércio Digital ME, Produto=Smartwatch Galaxy Watch 6 Bluetooth
+2026-10-04 14:32:48,016 - INFO - AutomacaoRPA - Pedido inserido: Cliente=SulTech Informática LTDA, Produto=Headset JBL Tune 710BT Sem Fio
+2026-10-04 14:32:48,017 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Patrícia Almeida Souza, Produto=Notebook Acer Aspire 14 8GB RAM 256GB
+2026-10-04 14:32:48,017 - INFO - AutomacaoRPA - Pedido inserido: Cliente=BrasilTech Soluções SA, Produto=Impressora Epson EcoTank L3250
+2026-10-04 14:32:48,017 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Patrícia Almeida Souza, Produto=Produto Inexistente (Teste)
+2026-10-04 14:32:48,018 - INFO - AutomacaoRPA - BATCH inserido com sucesso: BATCH-000002
+2026-10-04 14:32:48,018 - INFO - AutomacaoRPA - Processando arquivo: BATCH-000003_PEDIDOS.csv
+2026-10-04 14:32:48,020 - INFO - AutomacaoRPA - Arquivo BATCH-000003_PEDIDOS.csv carregado com 5 registros.
+2026-10-04 14:32:48,021 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Roberto Santos Lima, Produto=Notebook Lenovo IdeaPad 3 12GB RAM
+2026-10-04 14:32:48,021 - INFO - AutomacaoRPA - Pedido inserido: Cliente=João Pedro Silva, Produto=Monitor Samsung 24 Polegadas Full HD
+2026-10-04 14:32:48,022 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Carlos Eduardo Mendes, Produto=Impressora Epson EcoTank L3250
+2026-10-04 14:32:48,022 - INFO - AutomacaoRPA - Pedido inserido: Cliente=BrasilTech Soluções SA, Produto=Smartwatch Amazfit Bip 5
+2026-10-04 14:32:48,022 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Carlos Eduardo Mendes, Produto=Produto Inexistente (Teste)
+2026-10-04 14:32:48,023 - INFO - AutomacaoRPA - BATCH inserido com sucesso: BATCH-000003
+2026-10-04 14:32:48,023 - INFO - AutomacaoRPA - Processando arquivo: BATCH-000004_PEDIDOS.csv
+2026-10-04 14:32:48,025 - INFO - AutomacaoRPA - Arquivo BATCH-000004_PEDIDOS.csv carregado com 5 registros.
+2026-10-04 14:32:48,026 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Ana Paula Ribeiro, Produto=Smartwatch Amazfit Bip 5
+2026-10-04 14:32:48,027 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Patrícia Almeida Souza, Produto=Monitor AOC 32 Polegadas 4K UHD
+2026-10-04 14:32:48,027 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Tech Solutions LTDA, Produto=Notebook Lenovo IdeaPad 3 12GB RAM
+2026-10-04 14:32:48,028 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Distribuidora Norte LTDA, Produto=Notebook Dell Inspiron 15 16GB RAM 512GB SSD
+2026-10-04 14:32:48,029 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Tech Solutions LTDA, Produto=Produto Inexistente (Teste)
+2026-10-04 14:32:48,029 - INFO - AutomacaoRPA - BATCH inserido com sucesso: BATCH-000004
+2026-10-04 14:32:48,029 - INFO - AutomacaoRPA - Processando arquivo: BATCH-000005_PEDIDOS.csv
+2026-10-04 14:32:48,049 - INFO - AutomacaoRPA - Arquivo BATCH-000005_PEDIDOS.csv carregado com 5 registros.
+2026-10-04 14:32:48,050 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Distribuidora Norte LTDA, Produto=Notebook Acer Aspire 14 8GB RAM 256GB
+2026-10-04 14:32:48,050 - INFO - AutomacaoRPA - Pedido inserido: Cliente=BrasilTech Soluções SA, Produto=Smartwatch Galaxy Watch 6 Bluetooth
+2026-10-04 14:32:48,051 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Fernando Oliveira Castro, Produto=Notebook Dell Inspiron 15 16GB RAM 512GB SSD
+2026-10-04 14:32:48,051 - INFO - AutomacaoRPA - Pedido inserido: Cliente=João Pedro Silva, Produto=Mouse Microsoft Sculpt Ergonômico
+2026-10-04 14:32:48,052 - INFO - AutomacaoRPA - Pedido inserido: Cliente=Marcos Vinícius Rocha, Produto=Produto Inexistente (Teste)
+2026-10-04 14:32:48,052 - INFO - AutomacaoRPA - BATCH inserido com sucesso: BATCH-000005
+2026-10-04 14:32:48,053 - INFO - AutomacaoRPA - Todos os pedidos foram inseridos e conexão encerrada.
+2026-10-04 14:32:49,898 - INFO - AutomacaoRPA - Iniciando processo de login...
+2026-10-04 14:32:50,415 - INFO - AutomacaoRPA - Campo de usuário encontrado.
+2026-10-04 14:32:50,424 - INFO - AutomacaoRPA - Campo de senha encontrado.
+2026-10-04 14:32:50,437 - INFO - AutomacaoRPA - Botão de login encontrado.
+2026-10-04 14:32:50,487 - INFO - AutomacaoRPA - Usuário preenchido: caiogrites@gmail.com
+2026-10-04 14:32:50,522 - INFO - AutomacaoRPA - Senha preenchida (oculta).
+2026-10-04 14:32:50,555 - INFO - AutomacaoRPA - Botão de login clicado. Login enviado.
+2026-10-04 14:32:50,555 - INFO - AutomacaoRPA - Buscando pedidos pendentes no banco...
+2026-10-04 14:32:50,565 - INFO - AutomacaoRPA - Total de pedidos pendentes encontrados: 26
+2026-10-04 14:32:50,566 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:32:52,660 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:32:52,660 - INFO - AutomacaoRPA - Preenchendo cliente: Vale Verde Agroindústria
+2026-10-04 14:32:53,284 - INFO - AutomacaoRPA - Cliente selecionado: Vale Verde Agroindústria
+2026-10-04 14:32:53,284 - INFO - AutomacaoRPA - Preenchendo produto: Smartphone Motorola Moto G54 5G
+2026-10-04 14:32:53,400 - INFO - AutomacaoRPA - Produto selecionado: Smartphone Motorola Moto G54 5G
+2026-10-04 14:32:53,400 - INFO - AutomacaoRPA - Preenchendo quantidade: 3
+2026-10-04 14:32:53,488 - INFO - AutomacaoRPA - Quantidade preenchida: 3
+2026-10-04 14:32:53,488 - INFO - AutomacaoRPA - Preenchendo desconto: 64.95
+2026-10-04 14:32:53,520 - INFO - AutomacaoRPA - desconto preenchido: 64.95
+2026-10-04 14:32:53,520 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:32:53,553 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:32:53,553 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:32:53,601 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:32:58,672 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:32:59,044 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:32:59,048 - INFO - AutomacaoRPA - Status atualizado: Cliente=Vale Verde Agroindústria, Produto=Smartphone Motorola Moto G54 5G, Status=NOTA EMITIDA
+2026-10-04 14:32:59,048 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Vale Verde Agroindústria - Smartphone Motorola Moto G54 5G
+2026-10-04 14:32:59,049 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:33:00,118 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:33:00,118 - INFO - AutomacaoRPA - Preenchendo cliente: Carlos Eduardo Mendes
+2026-10-04 14:33:00,225 - INFO - AutomacaoRPA - Cliente selecionado: Carlos Eduardo Mendes
+2026-10-04 14:33:00,225 - INFO - AutomacaoRPA - Preenchendo produto: Smartphone Samsung Galaxy A54 5G 128GB
+2026-10-04 14:33:00,348 - INFO - AutomacaoRPA - Produto selecionado: Smartphone Samsung Galaxy A54 5G 128GB
+2026-10-04 14:33:00,348 - INFO - AutomacaoRPA - Preenchendo quantidade: 2
+2026-10-04 14:33:00,433 - INFO - AutomacaoRPA - Quantidade preenchida: 2
+2026-10-04 14:33:00,434 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:33:00,464 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:33:00,464 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:33:00,492 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:33:00,492 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:33:00,525 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:33:06,101 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:33:06,484 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:33:06,492 - INFO - AutomacaoRPA - Status atualizado: Cliente=Carlos Eduardo Mendes, Produto=Smartphone Samsung Galaxy A54 5G 128GB, Status=NOTA EMITIDA
+2026-10-04 14:33:06,492 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Carlos Eduardo Mendes - Smartphone Samsung Galaxy A54 5G 128GB
+2026-10-04 14:33:06,492 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:33:07,037 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:33:07,037 - INFO - AutomacaoRPA - Preenchendo cliente: Juliana Ferreira Dias
+2026-10-04 14:33:07,651 - INFO - AutomacaoRPA - Cliente selecionado: Juliana Ferreira Dias
+2026-10-04 14:33:07,651 - INFO - AutomacaoRPA - Preenchendo produto: Smartphone Motorola Moto G54 5G
+2026-10-04 14:33:07,784 - INFO - AutomacaoRPA - Produto selecionado: Smartphone Motorola Moto G54 5G
+2026-10-04 14:33:07,784 - INFO - AutomacaoRPA - Preenchendo quantidade: 3
+2026-10-04 14:33:07,871 - INFO - AutomacaoRPA - Quantidade preenchida: 3
+2026-10-04 14:33:07,871 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:33:07,903 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:33:07,904 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:33:07,933 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:33:07,933 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:33:07,967 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:33:13,052 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:33:13,383 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:33:13,384 - INFO - AutomacaoRPA - Status atualizado: Cliente=Juliana Ferreira Dias, Produto=Smartphone Motorola Moto G54 5G, Status=NOTA EMITIDA
+2026-10-04 14:33:13,385 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Juliana Ferreira Dias - Smartphone Motorola Moto G54 5G
+2026-10-04 14:33:13,385 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:33:13,948 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:33:13,949 - INFO - AutomacaoRPA - Preenchendo cliente: Inovação Software SA
+2026-10-04 14:33:14,563 - INFO - AutomacaoRPA - Cliente selecionado: Inovação Software SA
+2026-10-04 14:33:14,563 - INFO - AutomacaoRPA - Preenchendo produto: Monitor AOC 32 Polegadas 4K UHD
+2026-10-04 14:33:14,662 - INFO - AutomacaoRPA - Produto selecionado: Monitor AOC 32 Polegadas 4K UHD
+2026-10-04 14:33:14,662 - INFO - AutomacaoRPA - Preenchendo quantidade: 1
+2026-10-04 14:33:14,751 - INFO - AutomacaoRPA - Quantidade preenchida: 1
+2026-10-04 14:33:14,751 - INFO - AutomacaoRPA - Preenchendo desconto: 89.95
+2026-10-04 14:33:14,781 - INFO - AutomacaoRPA - desconto preenchido: 89.95
+2026-10-04 14:33:14,781 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:33:14,832 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:33:14,833 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:33:14,869 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:33:19,941 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:33:20,301 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:33:20,302 - INFO - AutomacaoRPA - Status atualizado: Cliente=Inovação Software SA, Produto=Monitor AOC 32 Polegadas 4K UHD, Status=NOTA EMITIDA
+2026-10-04 14:33:20,302 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Inovação Software SA - Monitor AOC 32 Polegadas 4K UHD
+2026-10-04 14:33:20,302 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:33:20,866 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:33:20,867 - INFO - AutomacaoRPA - Preenchendo cliente: Roberto Santos Lima
+2026-10-04 14:33:21,476 - INFO - AutomacaoRPA - Cliente selecionado: Roberto Santos Lima
+2026-10-04 14:33:21,476 - INFO - AutomacaoRPA - Preenchendo produto: Headset JBL Tune 710BT Sem Fio
+2026-10-04 14:33:21,581 - INFO - AutomacaoRPA - Produto selecionado: Headset JBL Tune 710BT Sem Fio
+2026-10-04 14:33:21,581 - INFO - AutomacaoRPA - Preenchendo quantidade: 3
+2026-10-04 14:33:21,676 - INFO - AutomacaoRPA - Quantidade preenchida: 3
+2026-10-04 14:33:21,676 - INFO - AutomacaoRPA - Preenchendo desconto: 15.0
+2026-10-04 14:33:21,706 - INFO - AutomacaoRPA - desconto preenchido: 15.0
+2026-10-04 14:33:21,707 - INFO - AutomacaoRPA - Preenchendo frete: 41.67
+2026-10-04 14:33:21,736 - INFO - AutomacaoRPA - frete preenchido: 41.67
+2026-10-04 14:33:21,737 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:33:21,773 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:33:26,833 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:33:27,156 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:33:27,157 - INFO - AutomacaoRPA - Status atualizado: Cliente=Roberto Santos Lima, Produto=Headset JBL Tune 710BT Sem Fio, Status=NOTA EMITIDA
+2026-10-04 14:33:27,158 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Roberto Santos Lima - Headset JBL Tune 710BT Sem Fio
+2026-10-04 14:33:27,158 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:33:27,713 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:33:27,713 - INFO - AutomacaoRPA - Preenchendo cliente: Mercado Livre Comércio
+2026-10-04 14:33:27,874 - INFO - AutomacaoRPA - Cliente selecionado: Mercado Livre Comércio
+2026-10-04 14:33:27,874 - INFO - AutomacaoRPA - Preenchendo produto: Produto Inexistente (Teste)
+2026-10-04 14:33:48,254 - INFO - AutomacaoRPA - Status atualizado: Cliente=Mercado Livre Comércio, Produto=Produto Inexistente (Teste), Status=PRODUTO NÃO ENCONTRADO
+2026-10-04 14:33:48,254 - ERROR - AutomacaoRPA - ❌ Falha ao emitir nota para Mercado Livre Comércio - Produto Inexistente (Teste): Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6f0169d55+5a55]
+	chromedriver!(No symbol) [0x7ff6f008f540]
+	chromedriver!(No symbol) [0x7ff6efeb45fd]
+	chromedriver!(No symbol) [0x7ff6eff0fca1]
+	chromedriver!(No symbol) [0x7ff6eff0ff6c]
+	chromedriver!(No symbol) [0x7ff6eff63077]
+	chromedriver!(No symbol) [0x7ff6eff5fcd9]
+	chromedriver!(No symbol) [0x7ff6eff01a12]
+	chromedriver!(No symbol) [0x7ff6eff02823]
+	chromedriver!GetHandleVerifier [0x7ff6f05804b1+41c1b1]
+	chromedriver!GetHandleVerifier [0x7ff6f05ae26b+449f6b]
+	chromedriver!GetHandleVerifier [0x7ff6f05a274e+43e44e]
+	chromedriver!GetHandleVerifier [0x7ff6f02632fe+feffe]
+	chromedriver!(No symbol) [0x7ff6f009cb55]
+	chromedriver!(No symbol) [0x7ff6f0097f64]
+	chromedriver!(No symbol) [0x7ff6f00980f4]
+	chromedriver!(No symbol) [0x7ff6f0082e4c]
+	KERNEL32!BaseThreadInitThunk [0x7fff6485cd87+17]
+	ntdll!RtlUserThreadStart [0x7fff65cacaec+2c]
+
+2026-10-04 14:33:48,254 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:33:48,354 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:33:48,354 - INFO - AutomacaoRPA - Preenchendo cliente: Comércio Digital ME
+2026-10-04 14:33:48,536 - INFO - AutomacaoRPA - Cliente selecionado: Comércio Digital ME
+2026-10-04 14:33:48,537 - INFO - AutomacaoRPA - Preenchendo produto: Smartwatch Galaxy Watch 6 Bluetooth
+2026-10-04 14:33:48,755 - INFO - AutomacaoRPA - Produto selecionado: Smartwatch Galaxy Watch 6 Bluetooth
+2026-10-04 14:33:48,756 - INFO - AutomacaoRPA - Preenchendo quantidade: 3
+2026-10-04 14:33:48,933 - INFO - AutomacaoRPA - Quantidade preenchida: 3
+2026-10-04 14:33:48,933 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:33:48,983 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:33:48,984 - INFO - AutomacaoRPA - Preenchendo frete: 50.86
+2026-10-04 14:33:49,039 - INFO - AutomacaoRPA - frete preenchido: 50.86
+2026-10-04 14:33:49,039 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:33:49,111 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:33:54,365 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:33:54,751 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:33:54,754 - INFO - AutomacaoRPA - Status atualizado: Cliente=Comércio Digital ME, Produto=Smartwatch Galaxy Watch 6 Bluetooth, Status=NOTA EMITIDA
+2026-10-04 14:33:54,754 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Comércio Digital ME - Smartwatch Galaxy Watch 6 Bluetooth
+2026-10-04 14:33:54,754 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:33:55,363 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:33:55,363 - INFO - AutomacaoRPA - Preenchendo cliente: SulTech Informática LTDA
+2026-10-04 14:33:55,605 - INFO - AutomacaoRPA - Cliente selecionado: SulTech Informática LTDA
+2026-10-04 14:33:55,605 - INFO - AutomacaoRPA - Preenchendo produto: Headset JBL Tune 710BT Sem Fio
+2026-10-04 14:33:55,792 - INFO - AutomacaoRPA - Produto selecionado: Headset JBL Tune 710BT Sem Fio
+2026-10-04 14:33:55,792 - INFO - AutomacaoRPA - Preenchendo quantidade: 1
+2026-10-04 14:33:55,955 - INFO - AutomacaoRPA - Quantidade preenchida: 1
+2026-10-04 14:33:55,955 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:33:56,006 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:33:56,006 - INFO - AutomacaoRPA - Preenchendo frete: 39.72
+2026-10-04 14:33:56,069 - INFO - AutomacaoRPA - frete preenchido: 39.72
+2026-10-04 14:33:56,069 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:33:56,137 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:34:01,345 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:34:01,777 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:34:01,781 - INFO - AutomacaoRPA - Status atualizado: Cliente=SulTech Informática LTDA, Produto=Headset JBL Tune 710BT Sem Fio, Status=NOTA EMITIDA
+2026-10-04 14:34:01,781 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para SulTech Informática LTDA - Headset JBL Tune 710BT Sem Fio
+2026-10-04 14:34:01,781 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:34:02,903 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:34:02,903 - INFO - AutomacaoRPA - Preenchendo cliente: Patrícia Almeida Souza
+2026-10-04 14:34:03,131 - INFO - AutomacaoRPA - Cliente selecionado: Patrícia Almeida Souza
+2026-10-04 14:34:03,131 - INFO - AutomacaoRPA - Preenchendo produto: Notebook Acer Aspire 14 8GB RAM 256GB
+2026-10-04 14:34:03,392 - INFO - AutomacaoRPA - Produto selecionado: Notebook Acer Aspire 14 8GB RAM 256GB
+2026-10-04 14:34:03,392 - INFO - AutomacaoRPA - Preenchendo quantidade: 3
+2026-10-04 14:34:03,551 - INFO - AutomacaoRPA - Quantidade preenchida: 3
+2026-10-04 14:34:03,551 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:34:03,612 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:34:03,612 - INFO - AutomacaoRPA - Preenchendo frete: 23.0
+2026-10-04 14:34:03,665 - INFO - AutomacaoRPA - frete preenchido: 23.0
+2026-10-04 14:34:03,665 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:34:03,734 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:34:11,976 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:34:12,381 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:34:12,385 - INFO - AutomacaoRPA - Status atualizado: Cliente=Patrícia Almeida Souza, Produto=Notebook Acer Aspire 14 8GB RAM 256GB, Status=NOTA EMITIDA
+2026-10-04 14:34:12,385 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Patrícia Almeida Souza - Notebook Acer Aspire 14 8GB RAM 256GB
+2026-10-04 14:34:12,385 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:34:13,038 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:34:13,038 - INFO - AutomacaoRPA - Preenchendo cliente: BrasilTech Soluções SA
+2026-10-04 14:34:13,271 - INFO - AutomacaoRPA - Cliente selecionado: BrasilTech Soluções SA
+2026-10-04 14:34:13,271 - INFO - AutomacaoRPA - Preenchendo produto: Impressora Epson EcoTank L3250
+2026-10-04 14:34:13,489 - INFO - AutomacaoRPA - Produto selecionado: Impressora Epson EcoTank L3250
+2026-10-04 14:34:13,489 - INFO - AutomacaoRPA - Preenchendo quantidade: 2
+2026-10-04 14:34:13,694 - INFO - AutomacaoRPA - Quantidade preenchida: 2
+2026-10-04 14:34:13,694 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:34:13,760 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:34:13,761 - INFO - AutomacaoRPA - Preenchendo frete: 69.75
+2026-10-04 14:34:13,822 - INFO - AutomacaoRPA - frete preenchido: 69.75
+2026-10-04 14:34:13,822 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:34:13,911 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:34:19,595 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:34:20,021 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:34:20,026 - INFO - AutomacaoRPA - Status atualizado: Cliente=BrasilTech Soluções SA, Produto=Impressora Epson EcoTank L3250, Status=NOTA EMITIDA
+2026-10-04 14:34:20,026 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para BrasilTech Soluções SA - Impressora Epson EcoTank L3250
+2026-10-04 14:34:20,026 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:34:20,816 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:34:20,817 - INFO - AutomacaoRPA - Preenchendo cliente: Patrícia Almeida Souza
+2026-10-04 14:34:21,219 - INFO - AutomacaoRPA - Cliente selecionado: Patrícia Almeida Souza
+2026-10-04 14:34:21,219 - INFO - AutomacaoRPA - Preenchendo produto: Produto Inexistente (Teste)
+2026-10-04 14:34:41,425 - INFO - AutomacaoRPA - Status atualizado: Cliente=Patrícia Almeida Souza, Produto=Produto Inexistente (Teste), Status=PRODUTO NÃO ENCONTRADO
+2026-10-04 14:34:41,425 - ERROR - AutomacaoRPA - ❌ Falha ao emitir nota para Patrícia Almeida Souza - Produto Inexistente (Teste): Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6f0169d55+5a55]
+	chromedriver!(No symbol) [0x7ff6f008f540]
+	chromedriver!(No symbol) [0x7ff6efeb45fd]
+	chromedriver!(No symbol) [0x7ff6eff0fca1]
+	chromedriver!(No symbol) [0x7ff6eff0ff6c]
+	chromedriver!(No symbol) [0x7ff6eff63077]
+	chromedriver!(No symbol) [0x7ff6eff5fcd9]
+	chromedriver!(No symbol) [0x7ff6eff01a12]
+	chromedriver!(No symbol) [0x7ff6eff02823]
+	chromedriver!GetHandleVerifier [0x7ff6f05804b1+41c1b1]
+	chromedriver!GetHandleVerifier [0x7ff6f05ae26b+449f6b]
+	chromedriver!GetHandleVerifier [0x7ff6f05a274e+43e44e]
+	chromedriver!GetHandleVerifier [0x7ff6f02632fe+feffe]
+	chromedriver!(No symbol) [0x7ff6f009cb55]
+	chromedriver!(No symbol) [0x7ff6f0097f64]
+	chromedriver!(No symbol) [0x7ff6f00980f4]
+	chromedriver!(No symbol) [0x7ff6f0082e4c]
+	KERNEL32!BaseThreadInitThunk [0x7fff6485cd87+17]
+	ntdll!RtlUserThreadStart [0x7fff65cacaec+2c]
+
+2026-10-04 14:34:41,425 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:34:41,509 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:34:41,509 - INFO - AutomacaoRPA - Preenchendo cliente: Roberto Santos Lima
+2026-10-04 14:34:41,681 - INFO - AutomacaoRPA - Cliente selecionado: Roberto Santos Lima
+2026-10-04 14:34:41,681 - INFO - AutomacaoRPA - Preenchendo produto: Notebook Lenovo IdeaPad 3 12GB RAM
+2026-10-04 14:34:41,891 - INFO - AutomacaoRPA - Produto selecionado: Notebook Lenovo IdeaPad 3 12GB RAM
+2026-10-04 14:34:41,891 - INFO - AutomacaoRPA - Preenchendo quantidade: 2
+2026-10-04 14:34:42,065 - INFO - AutomacaoRPA - Quantidade preenchida: 2
+2026-10-04 14:34:42,065 - INFO - AutomacaoRPA - Preenchendo desconto: 124.95
+2026-10-04 14:34:42,116 - INFO - AutomacaoRPA - desconto preenchido: 124.95
+2026-10-04 14:34:42,117 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:34:42,167 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:34:42,167 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:34:42,231 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:34:47,932 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:34:48,341 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:34:48,346 - INFO - AutomacaoRPA - Status atualizado: Cliente=Roberto Santos Lima, Produto=Notebook Lenovo IdeaPad 3 12GB RAM, Status=NOTA EMITIDA
+2026-10-04 14:34:48,346 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Roberto Santos Lima - Notebook Lenovo IdeaPad 3 12GB RAM
+2026-10-04 14:34:48,346 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:34:49,465 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:34:49,466 - INFO - AutomacaoRPA - Preenchendo cliente: João Pedro Silva
+2026-10-04 14:34:50,206 - INFO - AutomacaoRPA - Cliente selecionado: João Pedro Silva
+2026-10-04 14:34:50,207 - INFO - AutomacaoRPA - Preenchendo produto: Monitor Samsung 24 Polegadas Full HD
+2026-10-04 14:34:50,479 - INFO - AutomacaoRPA - Produto selecionado: Monitor Samsung 24 Polegadas Full HD
+2026-10-04 14:34:50,479 - INFO - AutomacaoRPA - Preenchendo quantidade: 1
+2026-10-04 14:34:50,719 - INFO - AutomacaoRPA - Quantidade preenchida: 1
+2026-10-04 14:34:50,719 - INFO - AutomacaoRPA - Preenchendo desconto: 44.95
+2026-10-04 14:34:50,780 - INFO - AutomacaoRPA - desconto preenchido: 44.95
+2026-10-04 14:34:50,780 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:34:50,832 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:34:50,833 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:34:50,915 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:34:56,671 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:34:57,052 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:34:57,054 - INFO - AutomacaoRPA - Status atualizado: Cliente=João Pedro Silva, Produto=Monitor Samsung 24 Polegadas Full HD, Status=NOTA EMITIDA
+2026-10-04 14:34:57,054 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para João Pedro Silva - Monitor Samsung 24 Polegadas Full HD
+2026-10-04 14:34:57,054 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:34:58,175 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:34:58,175 - INFO - AutomacaoRPA - Preenchendo cliente: Carlos Eduardo Mendes
+2026-10-04 14:34:58,418 - INFO - AutomacaoRPA - Cliente selecionado: Carlos Eduardo Mendes
+2026-10-04 14:34:58,419 - INFO - AutomacaoRPA - Preenchendo produto: Impressora Epson EcoTank L3250
+2026-10-04 14:34:58,647 - INFO - AutomacaoRPA - Produto selecionado: Impressora Epson EcoTank L3250
+2026-10-04 14:34:58,648 - INFO - AutomacaoRPA - Preenchendo quantidade: 3
+2026-10-04 14:34:58,828 - INFO - AutomacaoRPA - Quantidade preenchida: 3
+2026-10-04 14:34:58,829 - INFO - AutomacaoRPA - Preenchendo desconto: 49.95
+2026-10-04 14:34:58,886 - INFO - AutomacaoRPA - desconto preenchido: 49.95
+2026-10-04 14:34:58,886 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:34:58,941 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:34:58,941 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:34:59,014 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:35:04,184 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:35:04,552 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:35:04,557 - INFO - AutomacaoRPA - Status atualizado: Cliente=Carlos Eduardo Mendes, Produto=Impressora Epson EcoTank L3250, Status=NOTA EMITIDA
+2026-10-04 14:35:04,557 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Carlos Eduardo Mendes - Impressora Epson EcoTank L3250
+2026-10-04 14:35:04,557 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:35:05,256 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:35:05,257 - INFO - AutomacaoRPA - Preenchendo cliente: BrasilTech Soluções SA
+2026-10-04 14:35:05,512 - INFO - AutomacaoRPA - Cliente selecionado: BrasilTech Soluções SA
+2026-10-04 14:35:05,512 - INFO - AutomacaoRPA - Preenchendo produto: Smartwatch Amazfit Bip 5
+2026-10-04 14:35:05,696 - INFO - AutomacaoRPA - Produto selecionado: Smartwatch Amazfit Bip 5
+2026-10-04 14:35:05,697 - INFO - AutomacaoRPA - Preenchendo quantidade: 1
+2026-10-04 14:35:05,852 - INFO - AutomacaoRPA - Quantidade preenchida: 1
+2026-10-04 14:35:05,852 - INFO - AutomacaoRPA - Preenchendo desconto: 29.95
+2026-10-04 14:35:05,909 - INFO - AutomacaoRPA - desconto preenchido: 29.95
+2026-10-04 14:35:05,910 - INFO - AutomacaoRPA - Preenchendo frete: 50.42
+2026-10-04 14:35:05,964 - INFO - AutomacaoRPA - frete preenchido: 50.42
+2026-10-04 14:35:05,964 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:35:06,040 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:35:11,197 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:35:11,578 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:35:11,583 - INFO - AutomacaoRPA - Status atualizado: Cliente=BrasilTech Soluções SA, Produto=Smartwatch Amazfit Bip 5, Status=NOTA EMITIDA
+2026-10-04 14:35:11,583 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para BrasilTech Soluções SA - Smartwatch Amazfit Bip 5
+2026-10-04 14:35:11,583 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:35:12,711 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:35:12,711 - INFO - AutomacaoRPA - Preenchendo cliente: Carlos Eduardo Mendes
+2026-10-04 14:35:12,936 - INFO - AutomacaoRPA - Cliente selecionado: Carlos Eduardo Mendes
+2026-10-04 14:35:12,936 - INFO - AutomacaoRPA - Preenchendo produto: Produto Inexistente (Teste)
+2026-10-04 14:35:33,399 - INFO - AutomacaoRPA - Status atualizado: Cliente=Carlos Eduardo Mendes, Produto=Produto Inexistente (Teste), Status=PRODUTO NÃO ENCONTRADO
+2026-10-04 14:35:33,400 - ERROR - AutomacaoRPA - ❌ Falha ao emitir nota para Carlos Eduardo Mendes - Produto Inexistente (Teste): Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6f0169d55+5a55]
+	chromedriver!(No symbol) [0x7ff6f008f540]
+	chromedriver!(No symbol) [0x7ff6efeb45fd]
+	chromedriver!(No symbol) [0x7ff6eff0fca1]
+	chromedriver!(No symbol) [0x7ff6eff0ff6c]
+	chromedriver!(No symbol) [0x7ff6eff63077]
+	chromedriver!(No symbol) [0x7ff6eff5fcd9]
+	chromedriver!(No symbol) [0x7ff6eff01a12]
+	chromedriver!(No symbol) [0x7ff6eff02823]
+	chromedriver!GetHandleVerifier [0x7ff6f05804b1+41c1b1]
+	chromedriver!GetHandleVerifier [0x7ff6f05ae26b+449f6b]
+	chromedriver!GetHandleVerifier [0x7ff6f05a274e+43e44e]
+	chromedriver!GetHandleVerifier [0x7ff6f02632fe+feffe]
+	chromedriver!(No symbol) [0x7ff6f009cb55]
+	chromedriver!(No symbol) [0x7ff6f0097f64]
+	chromedriver!(No symbol) [0x7ff6f00980f4]
+	chromedriver!(No symbol) [0x7ff6f0082e4c]
+	KERNEL32!BaseThreadInitThunk [0x7fff6485cd87+17]
+	ntdll!RtlUserThreadStart [0x7fff65cacaec+2c]
+
+2026-10-04 14:35:33,400 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:35:33,496 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:35:33,496 - INFO - AutomacaoRPA - Preenchendo cliente: Ana Paula Ribeiro
+2026-10-04 14:35:33,688 - INFO - AutomacaoRPA - Cliente selecionado: Ana Paula Ribeiro
+2026-10-04 14:35:33,689 - INFO - AutomacaoRPA - Preenchendo produto: Smartwatch Amazfit Bip 5
+2026-10-04 14:35:33,908 - INFO - AutomacaoRPA - Produto selecionado: Smartwatch Amazfit Bip 5
+2026-10-04 14:35:33,908 - INFO - AutomacaoRPA - Preenchendo quantidade: 2
+2026-10-04 14:35:34,082 - INFO - AutomacaoRPA - Quantidade preenchida: 2
+2026-10-04 14:35:34,083 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:35:34,133 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:35:34,133 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:35:34,186 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:35:34,186 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:35:34,257 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:35:40,477 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:35:41,245 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:35:41,247 - INFO - AutomacaoRPA - Status atualizado: Cliente=Ana Paula Ribeiro, Produto=Smartwatch Amazfit Bip 5, Status=NOTA EMITIDA
+2026-10-04 14:35:41,247 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Ana Paula Ribeiro - Smartwatch Amazfit Bip 5
+2026-10-04 14:35:41,247 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:35:42,446 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:35:42,446 - INFO - AutomacaoRPA - Preenchendo cliente: Patrícia Almeida Souza
+2026-10-04 14:35:42,657 - INFO - AutomacaoRPA - Cliente selecionado: Patrícia Almeida Souza
+2026-10-04 14:35:42,658 - INFO - AutomacaoRPA - Preenchendo produto: Monitor AOC 32 Polegadas 4K UHD
+2026-10-04 14:35:42,857 - INFO - AutomacaoRPA - Produto selecionado: Monitor AOC 32 Polegadas 4K UHD
+2026-10-04 14:35:42,857 - INFO - AutomacaoRPA - Preenchendo quantidade: 3
+2026-10-04 14:35:43,029 - INFO - AutomacaoRPA - Quantidade preenchida: 3
+2026-10-04 14:35:43,029 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:35:43,085 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:35:43,086 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:35:43,142 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:35:43,142 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:35:43,216 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:35:48,946 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:35:49,331 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:35:49,333 - INFO - AutomacaoRPA - Status atualizado: Cliente=Patrícia Almeida Souza, Produto=Monitor AOC 32 Polegadas 4K UHD, Status=NOTA EMITIDA
+2026-10-04 14:35:49,333 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Patrícia Almeida Souza - Monitor AOC 32 Polegadas 4K UHD
+2026-10-04 14:35:49,333 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:35:50,459 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:35:50,460 - INFO - AutomacaoRPA - Preenchendo cliente: Tech Solutions LTDA
+2026-10-04 14:35:50,700 - INFO - AutomacaoRPA - Cliente selecionado: Tech Solutions LTDA
+2026-10-04 14:35:50,700 - INFO - AutomacaoRPA - Preenchendo produto: Notebook Lenovo IdeaPad 3 12GB RAM
+2026-10-04 14:35:50,921 - INFO - AutomacaoRPA - Produto selecionado: Notebook Lenovo IdeaPad 3 12GB RAM
+2026-10-04 14:35:50,921 - INFO - AutomacaoRPA - Preenchendo quantidade: 2
+2026-10-04 14:35:51,129 - INFO - AutomacaoRPA - Quantidade preenchida: 2
+2026-10-04 14:35:51,129 - INFO - AutomacaoRPA - Preenchendo desconto: 124.95
+2026-10-04 14:35:51,202 - INFO - AutomacaoRPA - desconto preenchido: 124.95
+2026-10-04 14:35:51,203 - INFO - AutomacaoRPA - Preenchendo frete: 51.51
+2026-10-04 14:35:51,285 - INFO - AutomacaoRPA - frete preenchido: 51.51
+2026-10-04 14:35:51,285 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:35:51,377 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:35:56,518 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:35:56,889 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:35:56,891 - INFO - AutomacaoRPA - Status atualizado: Cliente=Tech Solutions LTDA, Produto=Notebook Lenovo IdeaPad 3 12GB RAM, Status=NOTA EMITIDA
+2026-10-04 14:35:56,891 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Tech Solutions LTDA - Notebook Lenovo IdeaPad 3 12GB RAM
+2026-10-04 14:35:56,891 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:35:58,130 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:35:58,130 - INFO - AutomacaoRPA - Preenchendo cliente: Distribuidora Norte LTDA
+2026-10-04 14:35:58,358 - INFO - AutomacaoRPA - Cliente selecionado: Distribuidora Norte LTDA
+2026-10-04 14:35:58,359 - INFO - AutomacaoRPA - Preenchendo produto: Notebook Dell Inspiron 15 16GB RAM 512GB SSD
+2026-10-04 14:35:58,600 - INFO - AutomacaoRPA - Produto selecionado: Notebook Dell Inspiron 15 16GB RAM 512GB SSD
+2026-10-04 14:35:58,600 - INFO - AutomacaoRPA - Preenchendo quantidade: 1
+2026-10-04 14:35:58,787 - INFO - AutomacaoRPA - Quantidade preenchida: 1
+2026-10-04 14:35:58,788 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:35:58,848 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:35:58,848 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:35:58,923 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:35:58,924 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:35:59,012 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:36:04,336 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:36:04,804 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:36:04,807 - INFO - AutomacaoRPA - Status atualizado: Cliente=Distribuidora Norte LTDA, Produto=Notebook Dell Inspiron 15 16GB RAM 512GB SSD, Status=NOTA EMITIDA
+2026-10-04 14:36:04,807 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Distribuidora Norte LTDA - Notebook Dell Inspiron 15 16GB RAM 512GB SSD
+2026-10-04 14:36:04,807 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:36:05,597 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:36:05,598 - INFO - AutomacaoRPA - Preenchendo cliente: Tech Solutions LTDA
+2026-10-04 14:36:06,061 - INFO - AutomacaoRPA - Cliente selecionado: Tech Solutions LTDA
+2026-10-04 14:36:06,061 - INFO - AutomacaoRPA - Preenchendo produto: Produto Inexistente (Teste)
+2026-10-04 14:36:26,524 - INFO - AutomacaoRPA - Status atualizado: Cliente=Tech Solutions LTDA, Produto=Produto Inexistente (Teste), Status=PRODUTO NÃO ENCONTRADO
+2026-10-04 14:36:26,524 - ERROR - AutomacaoRPA - ❌ Falha ao emitir nota para Tech Solutions LTDA - Produto Inexistente (Teste): Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6f0169d55+5a55]
+	chromedriver!(No symbol) [0x7ff6f008f540]
+	chromedriver!(No symbol) [0x7ff6efeb45fd]
+	chromedriver!(No symbol) [0x7ff6eff0fca1]
+	chromedriver!(No symbol) [0x7ff6eff0ff6c]
+	chromedriver!(No symbol) [0x7ff6eff63077]
+	chromedriver!(No symbol) [0x7ff6eff5fcd9]
+	chromedriver!(No symbol) [0x7ff6eff01a12]
+	chromedriver!(No symbol) [0x7ff6eff02823]
+	chromedriver!GetHandleVerifier [0x7ff6f05804b1+41c1b1]
+	chromedriver!GetHandleVerifier [0x7ff6f05ae26b+449f6b]
+	chromedriver!GetHandleVerifier [0x7ff6f05a274e+43e44e]
+	chromedriver!GetHandleVerifier [0x7ff6f02632fe+feffe]
+	chromedriver!(No symbol) [0x7ff6f009cb55]
+	chromedriver!(No symbol) [0x7ff6f0097f64]
+	chromedriver!(No symbol) [0x7ff6f00980f4]
+	chromedriver!(No symbol) [0x7ff6f0082e4c]
+	KERNEL32!BaseThreadInitThunk [0x7fff6485cd87+17]
+	ntdll!RtlUserThreadStart [0x7fff65cacaec+2c]
+
+2026-10-04 14:36:26,524 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:36:26,644 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:36:26,644 - INFO - AutomacaoRPA - Preenchendo cliente: Distribuidora Norte LTDA
+2026-10-04 14:36:26,867 - INFO - AutomacaoRPA - Cliente selecionado: Distribuidora Norte LTDA
+2026-10-04 14:36:26,867 - INFO - AutomacaoRPA - Preenchendo produto: Notebook Acer Aspire 14 8GB RAM 256GB
+2026-10-04 14:36:27,203 - INFO - AutomacaoRPA - Produto selecionado: Notebook Acer Aspire 14 8GB RAM 256GB
+2026-10-04 14:36:27,203 - INFO - AutomacaoRPA - Preenchendo quantidade: 3
+2026-10-04 14:36:27,411 - INFO - AutomacaoRPA - Quantidade preenchida: 3
+2026-10-04 14:36:27,411 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:36:27,532 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:36:27,533 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:36:27,689 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:36:27,689 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:36:27,881 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:36:33,572 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:36:34,077 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:36:34,084 - INFO - AutomacaoRPA - Status atualizado: Cliente=Distribuidora Norte LTDA, Produto=Notebook Acer Aspire 14 8GB RAM 256GB, Status=NOTA EMITIDA
+2026-10-04 14:36:34,085 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Distribuidora Norte LTDA - Notebook Acer Aspire 14 8GB RAM 256GB
+2026-10-04 14:36:34,085 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:36:35,342 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:36:35,342 - INFO - AutomacaoRPA - Preenchendo cliente: BrasilTech Soluções SA
+2026-10-04 14:36:35,578 - INFO - AutomacaoRPA - Cliente selecionado: BrasilTech Soluções SA
+2026-10-04 14:36:35,578 - INFO - AutomacaoRPA - Preenchendo produto: Smartwatch Galaxy Watch 6 Bluetooth
+2026-10-04 14:36:35,789 - INFO - AutomacaoRPA - Produto selecionado: Smartwatch Galaxy Watch 6 Bluetooth
+2026-10-04 14:36:35,789 - INFO - AutomacaoRPA - Preenchendo quantidade: 1
+2026-10-04 14:36:35,938 - INFO - AutomacaoRPA - Quantidade preenchida: 1
+2026-10-04 14:36:35,938 - INFO - AutomacaoRPA - Preenchendo desconto: 64.95
+2026-10-04 14:36:35,990 - INFO - AutomacaoRPA - desconto preenchido: 64.95
+2026-10-04 14:36:35,990 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:36:36,042 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:36:36,042 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:36:36,105 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:36:41,770 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:36:42,258 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:36:42,263 - INFO - AutomacaoRPA - Status atualizado: Cliente=BrasilTech Soluções SA, Produto=Smartwatch Galaxy Watch 6 Bluetooth, Status=NOTA EMITIDA
+2026-10-04 14:36:42,263 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para BrasilTech Soluções SA - Smartwatch Galaxy Watch 6 Bluetooth
+2026-10-04 14:36:42,263 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:36:43,382 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:36:43,382 - INFO - AutomacaoRPA - Preenchendo cliente: Fernando Oliveira Castro
+2026-10-04 14:36:43,600 - INFO - AutomacaoRPA - Cliente selecionado: Fernando Oliveira Castro
+2026-10-04 14:36:43,601 - INFO - AutomacaoRPA - Preenchendo produto: Notebook Dell Inspiron 15 16GB RAM 512GB SSD
+2026-10-04 14:36:43,864 - INFO - AutomacaoRPA - Produto selecionado: Notebook Dell Inspiron 15 16GB RAM 512GB SSD
+2026-10-04 14:36:43,865 - INFO - AutomacaoRPA - Preenchendo quantidade: 3
+2026-10-04 14:36:44,039 - INFO - AutomacaoRPA - Quantidade preenchida: 3
+2026-10-04 14:36:44,039 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:36:44,097 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:36:44,097 - INFO - AutomacaoRPA - Preenchendo frete: 25.49
+2026-10-04 14:36:44,153 - INFO - AutomacaoRPA - frete preenchido: 25.49
+2026-10-04 14:36:44,153 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:36:44,235 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:36:49,906 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:36:50,316 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:36:50,318 - INFO - AutomacaoRPA - Status atualizado: Cliente=Fernando Oliveira Castro, Produto=Notebook Dell Inspiron 15 16GB RAM 512GB SSD, Status=NOTA EMITIDA
+2026-10-04 14:36:50,318 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para Fernando Oliveira Castro - Notebook Dell Inspiron 15 16GB RAM 512GB SSD
+2026-10-04 14:36:50,318 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:36:51,450 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:36:51,450 - INFO - AutomacaoRPA - Preenchendo cliente: João Pedro Silva
+2026-10-04 14:36:51,748 - INFO - AutomacaoRPA - Cliente selecionado: João Pedro Silva
+2026-10-04 14:36:51,749 - INFO - AutomacaoRPA - Preenchendo produto: Mouse Microsoft Sculpt Ergonômico
+2026-10-04 14:36:51,985 - INFO - AutomacaoRPA - Produto selecionado: Mouse Microsoft Sculpt Ergonômico
+2026-10-04 14:36:51,985 - INFO - AutomacaoRPA - Preenchendo quantidade: 3
+2026-10-04 14:36:52,379 - INFO - AutomacaoRPA - Quantidade preenchida: 3
+2026-10-04 14:36:52,380 - INFO - AutomacaoRPA - Preenchendo desconto: 0.0
+2026-10-04 14:36:52,435 - INFO - AutomacaoRPA - desconto preenchido: 0.0
+2026-10-04 14:36:52,436 - INFO - AutomacaoRPA - Preenchendo frete: 0.0
+2026-10-04 14:36:52,497 - INFO - AutomacaoRPA - frete preenchido: 0.0
+2026-10-04 14:36:52,497 - INFO - AutomacaoRPA - Emitindo nota fiscal...
+2026-10-04 14:36:52,566 - INFO - AutomacaoRPA - Botão 'EMITIR NOTA' clicado.
+2026-10-04 14:36:57,732 - INFO - AutomacaoRPA - Nota emitida com sucesso!
+2026-10-04 14:36:58,136 - INFO - AutomacaoRPA - Página atualizada após emissão.
+2026-10-04 14:36:58,137 - INFO - AutomacaoRPA - Status atualizado: Cliente=João Pedro Silva, Produto=Mouse Microsoft Sculpt Ergonômico, Status=NOTA EMITIDA
+2026-10-04 14:36:58,138 - INFO - AutomacaoRPA - ✅ Nota emitida com sucesso para João Pedro Silva - Mouse Microsoft Sculpt Ergonômico
+2026-10-04 14:36:58,138 - INFO - AutomacaoRPA - Abrindo nova nota fiscal...
+2026-10-04 14:36:58,746 - INFO - AutomacaoRPA - Nova Nota Fiscal aberta.
+2026-10-04 14:36:58,747 - INFO - AutomacaoRPA - Preenchendo cliente: Marcos Vinícius Rocha
+2026-10-04 14:36:59,469 - INFO - AutomacaoRPA - Cliente selecionado: Marcos Vinícius Rocha
+2026-10-04 14:36:59,469 - INFO - AutomacaoRPA - Preenchendo produto: Produto Inexistente (Teste)
+2026-10-04 14:37:19,706 - INFO - AutomacaoRPA - Status atualizado: Cliente=Marcos Vinícius Rocha, Produto=Produto Inexistente (Teste), Status=PRODUTO NÃO ENCONTRADO
+2026-10-04 14:37:19,707 - ERROR - AutomacaoRPA - ❌ Falha ao emitir nota para Marcos Vinícius Rocha - Produto Inexistente (Teste): Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6f0169d55+5a55]
+	chromedriver!(No symbol) [0x7ff6f008f540]
+	chromedriver!(No symbol) [0x7ff6efeb45fd]
+	chromedriver!(No symbol) [0x7ff6eff0fca1]
+	chromedriver!(No symbol) [0x7ff6eff0ff6c]
+	chromedriver!(No symbol) [0x7ff6eff63077]
+	chromedriver!(No symbol) [0x7ff6eff5fcd9]
+	chromedriver!(No symbol) [0x7ff6eff01a12]
+	chromedriver!(No symbol) [0x7ff6eff02823]
+	chromedriver!GetHandleVerifier [0x7ff6f05804b1+41c1b1]
+	chromedriver!GetHandleVerifier [0x7ff6f05ae26b+449f6b]
+	chromedriver!GetHandleVerifier [0x7ff6f05a274e+43e44e]
+	chromedriver!GetHandleVerifier [0x7ff6f02632fe+feffe]
+	chromedriver!(No symbol) [0x7ff6f009cb55]
+	chromedriver!(No symbol) [0x7ff6f0097f64]
+	chromedriver!(No symbol) [0x7ff6f00980f4]
+	chromedriver!(No symbol) [0x7ff6f0082e4c]
+	KERNEL32!BaseThreadInitThunk [0x7fff6485cd87+17]
+	ntdll!RtlUserThreadStart [0x7fff65cacaec+2c]
+
+2026-10-04 14:37:19,806 - INFO - AutomacaoRPA - Aba de Notas acessada com sucesso.
+2026-10-04 14:37:20,856 - INFO - AutomacaoRPA - Total de notas encontradas na tela: 21
+2026-10-04 14:37:21,017 - INFO - AutomacaoRPA - Processando nota NF-000021 para cliente João Pedro Silva
+2026-10-04 14:37:21,198 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000021
+2026-10-04 14:37:24,209 - INFO - AutomacaoRPA - Status atualizado para cliente=539,70, Status=João Pedro Silva
+2026-10-04 14:37:24,303 - INFO - AutomacaoRPA - Processando nota NF-000020 para cliente Fernando Oliveira Castro
+2026-10-04 14:37:24,385 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000020
+2026-10-04 14:37:27,387 - INFO - AutomacaoRPA - Status atualizado para cliente=11725,19, Status=Fernando Oliveira Castro
+2026-10-04 14:37:27,438 - INFO - AutomacaoRPA - Processando nota NF-000019 para cliente BrasilTech Soluções SA
+2026-10-04 14:37:27,515 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000019
+2026-10-04 14:37:30,516 - INFO - AutomacaoRPA - Status atualizado para cliente=1234,05, Status=BrasilTech Soluções SA
+2026-10-04 14:37:30,590 - INFO - AutomacaoRPA - Processando nota NF-000018 para cliente Distribuidora Norte LTDA
+2026-10-04 14:37:30,656 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000018
+2026-10-04 14:37:33,657 - INFO - AutomacaoRPA - Status atualizado para cliente=8397, Status=Distribuidora Norte LTDA
+2026-10-04 14:37:33,706 - INFO - AutomacaoRPA - Processando nota NF-000017 para cliente Distribuidora Norte LTDA
+2026-10-04 14:37:33,794 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000017
+2026-10-04 14:37:36,796 - INFO - AutomacaoRPA - Status atualizado para cliente=3899,90, Status=Distribuidora Norte LTDA
+2026-10-04 14:37:36,933 - INFO - AutomacaoRPA - Processando nota NF-000016 para cliente Tech Solutions LTDA
+2026-10-04 14:37:37,104 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000016
+2026-10-04 14:37:40,106 - INFO - AutomacaoRPA - Status atualizado para cliente=4924,56, Status=Tech Solutions LTDA
+2026-10-04 14:37:40,155 - INFO - AutomacaoRPA - Processando nota NF-000015 para cliente Patrícia Almeida Souza
+2026-10-04 14:37:40,224 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000015
+2026-10-04 14:37:43,227 - INFO - AutomacaoRPA - Status atualizado para cliente=5397, Status=Patrícia Almeida Souza
+2026-10-04 14:37:43,290 - INFO - AutomacaoRPA - Processando nota NF-000014 para cliente Ana Paula Ribeiro
+2026-10-04 14:37:43,365 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000014
+2026-10-04 14:37:46,366 - INFO - AutomacaoRPA - Status atualizado para cliente=1198, Status=Ana Paula Ribeiro
+2026-10-04 14:37:46,442 - INFO - AutomacaoRPA - Processando nota NF-000013 para cliente BrasilTech Soluções SA
+2026-10-04 14:37:46,530 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000013
+2026-10-04 14:37:49,532 - INFO - AutomacaoRPA - Status atualizado para cliente=619,47, Status=BrasilTech Soluções SA
+2026-10-04 14:37:49,584 - INFO - AutomacaoRPA - Processando nota NF-000012 para cliente Carlos Eduardo Mendes
+2026-10-04 14:37:49,676 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000012
+2026-10-04 14:37:52,680 - INFO - AutomacaoRPA - Status atualizado para cliente=2947,05, Status=Carlos Eduardo Mendes
+2026-10-04 14:37:52,853 - INFO - AutomacaoRPA - Processando nota NF-000011 para cliente João Pedro Silva
+2026-10-04 14:37:52,943 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000011
+2026-10-04 14:37:55,946 - INFO - AutomacaoRPA - Status atualizado para cliente=854,05, Status=João Pedro Silva
+2026-10-04 14:37:56,083 - INFO - AutomacaoRPA - Processando nota NF-000010 para cliente Roberto Santos Lima
+2026-10-04 14:37:56,222 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000010
+2026-10-04 14:37:59,223 - INFO - AutomacaoRPA - Status atualizado para cliente=4873,05, Status=Roberto Santos Lima
+2026-10-04 14:37:59,274 - INFO - AutomacaoRPA - Processando nota NF-000009 para cliente BrasilTech Soluções SA
+2026-10-04 14:37:59,351 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000009
+2026-10-04 14:38:02,353 - INFO - AutomacaoRPA - Status atualizado para cliente=2067,75, Status=BrasilTech Soluções SA
+2026-10-04 14:38:02,459 - INFO - AutomacaoRPA - Processando nota NF-000008 para cliente Patrícia Almeida Souza
+2026-10-04 14:38:02,538 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000008
+2026-10-04 14:38:05,541 - INFO - AutomacaoRPA - Status atualizado para cliente=8420, Status=Patrícia Almeida Souza
+2026-10-04 14:38:05,605 - INFO - AutomacaoRPA - Processando nota NF-000007 para cliente SulTech Informática LTDA
+2026-10-04 14:38:05,683 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000007
+2026-10-04 14:38:08,686 - INFO - AutomacaoRPA - Status atualizado para cliente=339,62, Status=SulTech Informática LTDA
+2026-10-04 14:38:08,747 - INFO - AutomacaoRPA - Processando nota NF-000006 para cliente Comércio Digital ME
+2026-10-04 14:38:08,849 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000006
+2026-10-04 14:38:11,854 - INFO - AutomacaoRPA - Status atualizado para cliente=3947,86, Status=Comércio Digital ME
+2026-10-04 14:38:11,940 - INFO - AutomacaoRPA - Processando nota NF-000005 para cliente Roberto Santos Lima
+2026-10-04 14:38:12,030 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000005
+2026-10-04 14:38:15,031 - INFO - AutomacaoRPA - Status atualizado para cliente=926,37, Status=Roberto Santos Lima
+2026-10-04 14:38:15,084 - INFO - AutomacaoRPA - Processando nota NF-000004 para cliente Inovação Software SA
+2026-10-04 14:38:15,156 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000004
+2026-10-04 14:38:18,161 - INFO - AutomacaoRPA - Status atualizado para cliente=1709,05, Status=Inovação Software SA
+2026-10-04 14:38:18,217 - INFO - AutomacaoRPA - Processando nota NF-000003 para cliente Juliana Ferreira Dias
+2026-10-04 14:38:18,314 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000003
+2026-10-04 14:38:21,319 - INFO - AutomacaoRPA - Status atualizado para cliente=3897, Status=Juliana Ferreira Dias
+2026-10-04 14:38:21,449 - INFO - AutomacaoRPA - Processando nota NF-000002 para cliente Carlos Eduardo Mendes
+2026-10-04 14:38:21,653 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000002
+2026-10-04 14:38:24,656 - INFO - AutomacaoRPA - Status atualizado para cliente=3798, Status=Carlos Eduardo Mendes
+2026-10-04 14:38:24,785 - INFO - AutomacaoRPA - Processando nota NF-000001 para cliente Vale Verde Agroindústria
+2026-10-04 14:38:24,951 - INFO - AutomacaoRPA - Download PDF iniciado para NF-000001
+2026-10-04 14:38:27,952 - INFO - AutomacaoRPA - Status atualizado para cliente=3832,05, Status=Vale Verde Agroindústria
+2026-10-04 14:38:30,287 - INFO - AutomacaoRPA - Gerando relatório Excel e enviando por e-mail...
+2026-10-04 14:38:30,296 - INFO - AutomacaoRPA - Conectando ao Oracle para gerar relatório...
+2026-10-04 14:38:30,359 - INFO - AutomacaoRPA - Consulta realizada com sucesso. Registros obtidos: 26
+2026-10-04 14:38:31,040 - INFO - AutomacaoRPA - 📂 Relatório Excel gerado em: C:\Users\User\Documents\AUTOMACAO_RPA\Input_Automacao\relatorio_lotes.xlsx
+2026-10-04 14:38:31,041 - INFO - AutomacaoRPA - Preparando e-mail para envio...
+2026-10-04 14:38:32,098 - INFO - AutomacaoRPA - Conectando ao servidor SMTP...
+2026-10-04 14:38:35,259 - INFO - AutomacaoRPA - ✅ E-mail enviado com sucesso para caio.grites@zohomail.com
+2026-10-04 14:38:35,260 - INFO - AutomacaoRPA - Relatório enviado com sucesso!
+2026-10-04 14:38:35,260 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:38:35,260 - INFO - AutomacaoRPA - AUTOMAÇÃO FINALIZADA
+2026-10-04 14:38:35,261 - INFO - AutomacaoRPA - ================================
+2026-10-04 14:38:35,266 - INFO - AutomacaoRPA - 🔒 Pool de conexões Oracle fechado.
