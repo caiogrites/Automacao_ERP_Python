@@ -1,47 +1,78 @@
-# tests/button_teste.py
+import time
 import os
-import pytest
-import pandas as pd
-from pages.enviar_email import gerar_relatorio, enviar_email
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from logs.logger import logger
+from utils.conectar_banco_oracle import obter_conexao, liberar_conexao
 
-def test_gerar_relatorio_cria_excel():
-    """Valida se o relatório Excel é gerado e contém dados"""
-    caminho = gerar_relatorio()
-    logger.info("Verificando se o arquivo Excel foi criado: %s", caminho)
-    assert os.path.exists(caminho), f"Arquivo {caminho} não foi gerado"
+class NotasPage:
+    def __init__(self, driver):
+        self.driver = driver
+        self.wait = WebDriverWait(driver, 20)
 
-    df = pd.read_excel(caminho)
-    logger.info("Linhas encontradas no relatório: %d", len(df))
-    assert len(df) > 0, "Relatório gerado está vazio"
+    def atualizar_status_por_cliente(self, status,cliente, valor_limpo):
+        conn = None
+        cursor = None
+        try:
+            conn = obter_conexao()
+            cursor = conn.cursor()
+            cursor.execute("""
+                UPDATE lote
+                SET status_processamento = :1
+                WHERE cliente = :2 AND VALOR_TOTAL = :3
+            """, (status, cliente, valor_limpo))
+            conn.commit()
+            logger.info("Status atualizado para cliente=%s, Status=%s", cliente, status)
+        except Exception as e:
+            logger.error("Erro ao atualizar status para cliente %s: %s", cliente, e)
+        finally:
+            if cursor:
+                cursor.close()
+            if conn:
+                liberar_conexao(conn)
 
-def test_enviar_email_monta_mensagem(monkeypatch, tmp_path):
-    """Valida se o e-mail é montado corretamente sem envio real"""
-    caminho_fake = tmp_path / "fake.xlsx"
-    caminho_fake.write_text("conteudo de teste")
+    def acessar_aba_notas(self):
+        aba_notas = self.wait.until(
+            EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[1]/aside/nav/div[2]/div[2]/a[4]"))
+        )
+        aba_notas.click()
+        logger.info("Aba de Notas acessada com sucesso.")
 
-    enviado = {}
+    def baixar_notas_pdf(self):
+        self.acessar_aba_notas()
 
-    def fake_send_message(self, msg):
-        enviado["subject"] = msg["Subject"]
-        enviado["to"] = msg["To"]
-        enviado["from"] = msg["From"]
-        # Confirma que o anexo está presente
-        anexos = [part.get_filename() for part in msg.iter_attachments()]
-        logger.info("Anexos encontrados na mensagem: %s", anexos)
-        assert "fake.xlsx" in anexos
+        try:
+            linhas = self.wait.until(
+                EC.presence_of_all_elements_located((By.XPATH, "//table/tbody/tr"))
+            )
+            logger.info("Total de notas encontradas na tela: %d", len(linhas))
+        except Exception:
+            logger.warning("Nenhuma nota encontrada após aguardar o carregamento.")
+            return
 
-    def fake_login(self, user, password):
-        logger.info("Login SMTP simulado para usuário %s", user)
-        return True
+        for linha in linhas:
+            try:
+                cliente = linha.find_element(By.XPATH, "./td[3]").text.strip()
+                numero_nf = linha.find_element(By.XPATH, "./td[2]").text.strip()
+                valor = linha.find_element(By.XPATH, "./td[6]").text.strip()
+                valor_limpo = valor.replace("R$", "").replace(".", "").strip()
 
-    # substitui métodos reais por fakes
-    monkeypatch.setattr("smtplib.SMTP.send_message", fake_send_message)
-    monkeypatch.setattr("smtplib.SMTP.login", fake_login)
+                # Se terminar com ",00", remove
+                if valor_limpo.endswith(",00"):
+                   valor_limpo = valor_limpo[:-3]
 
-    enviar_email(str(caminho_fake))
+                logger.info("Processando nota %s para cliente %s", numero_nf, cliente)
 
-    logger.info("Validando montagem da mensagem de e-mail")
-    assert enviado["subject"] == "Relatório de Processamento ERP"
-    assert enviado["to"] == "caio.grites@zohomail.com"
-    assert enviado["from"] == "caiogrites@gmail.com"
+                botao_pdf = linha.find_element(By.XPATH, ".//button[@title='Baixar PDF']")
+                self.wait.until(EC.element_to_be_clickable(botao_pdf))
+                botao_pdf.click()
+                logger.info("Download PDF iniciado para %s", numero_nf)
+                time.sleep(3)
+
+                self.atualizar_status_por_cliente(cliente, valor_limpo, "NOTA EMITIDA")
+                logger.info("✅ Nota %s baixada e status atualizado para cliente %s", numero_nf, cliente, valor_limpo)
+
+            except Exception as e:
+                logger.error("❌ Falha ao baixar nota para cliente %s: %s", cliente, e)
+                self.atualizar_status_por_cliente(cliente, "ERRO_DOWNLOAD")

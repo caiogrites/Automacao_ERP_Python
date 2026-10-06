@@ -1,0 +1,20 @@
+# Ambientes virtuais
+venv/
+.env
+
+# Cache e compilados
+__pycache__/
+*.py[cod]
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# Configurações locais
+.DS_Store
+.idea/
+.vscode/
+
+# Testes e relatórios
+.coverage
+htmlcov/
